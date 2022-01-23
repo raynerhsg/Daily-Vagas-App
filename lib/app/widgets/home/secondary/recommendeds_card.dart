@@ -1,3 +1,4 @@
+import 'package:daily_vagas_app/app/screens/jobs_details/jobs_details_screen.dart';
 import 'package:flutter/material.dart';
 
 class RecommendedsCards extends StatelessWidget {
@@ -7,12 +8,28 @@ class RecommendedsCards extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(right: 16.0),
-      child: Container(
-        decoration: const BoxDecoration(
-          color: Color(0XFF2E3138),
-          borderRadius: BorderRadius.all(Radius.circular(16)),
+      child: GestureDetector(
+        onTap: () {
+          showModalBottomSheet(
+            isScrollControlled: true,
+            shape: const RoundedRectangleBorder(
+              borderRadius: BorderRadius.vertical(
+                top: Radius.circular(48),
+              ),
+            ),
+            context: context,
+            builder: (f) {
+              return const JobsDetailsScreen();
+            },
+          );
+        },
+        child: Container(
+          decoration: const BoxDecoration(
+            color: Color(0XFF2E3138),
+            borderRadius: BorderRadius.all(Radius.circular(16)),
+          ),
+          child: _body(),
         ),
-        child: _body(),
       ),
     );
   }

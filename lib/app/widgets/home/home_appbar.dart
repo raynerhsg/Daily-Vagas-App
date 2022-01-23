@@ -7,6 +7,7 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: AppBar(
+        automaticallyImplyLeading: false,
         elevation: 0,
         centerTitle: false,
         toolbarHeight: 84,

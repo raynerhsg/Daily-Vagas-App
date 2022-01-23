@@ -1,5 +1,5 @@
-import 'package:daily_vagas_app/app/screens/home/home_recommendeds.dart';
-import 'package:daily_vagas_app/app/screens/home/home_vacancies_applied.dart';
+import 'package:daily_vagas_app/app/widgets/home/home_recommendeds.dart';
+import 'package:daily_vagas_app/app/widgets/home/home_jobs_applied.dart';
 import 'package:daily_vagas_app/app/widgets/home/home_appbar.dart';
 import 'package:daily_vagas_app/app/widgets/home/home_search.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
         children: const [
           HomeSearch(),
           HomeRecommendeds(),
-          HomeVacanciesApplied(),
+          HomeJobsApplied(),
         ],
       ),
     );

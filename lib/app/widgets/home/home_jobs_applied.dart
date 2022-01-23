@@ -1,8 +1,8 @@
-import 'package:daily_vagas_app/app/widgets/home/secondary/vacancies_applied_card.dart';
+import 'package:daily_vagas_app/app/widgets/home/secondary/jobs_applied_card.dart';
 import 'package:flutter/material.dart';
 
-class HomeVacanciesApplied extends StatelessWidget {
-  const HomeVacanciesApplied({Key? key}) : super(key: key);
+class HomeJobsApplied extends StatelessWidget {
+  const HomeJobsApplied({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -41,10 +41,10 @@ class HomeVacanciesApplied extends StatelessWidget {
       padding: const EdgeInsets.only(top: 24.0),
       child: Column(
         children: const [
-          VacanciesAppliedCard(),
-          VacanciesAppliedCard(),
-          VacanciesAppliedCard(),
-          VacanciesAppliedCard(),
+          JobsAppliedCard(),
+          JobsAppliedCard(),
+          JobsAppliedCard(),
+          JobsAppliedCard(),
         ],
       ),
     );

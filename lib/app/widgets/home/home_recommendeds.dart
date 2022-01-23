@@ -18,6 +18,7 @@ class HomeRecommendeds extends StatelessWidget {
       child: Column(
         children: [
           _header(),
+          const SizedBox(height: 8),
           _list(),
         ],
       ),
